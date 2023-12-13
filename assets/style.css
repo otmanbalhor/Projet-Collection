@@ -14,9 +14,9 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  /*font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  vertical-align: baseline;*/
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -48,10 +48,27 @@ table {
   border-spacing: 0;
 }
 
+body {
+  width: 100%;
+  max-width: 1520px;
+  height: 100%;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+}
 body .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 5%;
 }
 body .container .card {
-  border: 1px #000000;
+  border: 1px solid #000000;
+}
+body .container .card .card__text {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

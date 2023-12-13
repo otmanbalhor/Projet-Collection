@@ -45,11 +45,11 @@ const collection=[
     },
 
     {
-        name: "Xavi",
+        name: "Xavi Hernandez",
         nationalite: "espagnol",
         poste: "Milieu",
         birth : 1980,
-        picture: "images/xavi.jpeg",
+        picture: "images/xavi.jpg",
         taille: 170,
         poids: 68,
         description:"blabla",
@@ -82,7 +82,7 @@ const collection=[
         nationalite: "ivoirien",
         poste: "Defenseur",
         birth : 1983,
-        picture: "images/yaya.jpeg",
+        picture: "images/yaya.jpg",
         taille: 191,
         poids: 90,
         description:"blabla",
@@ -123,8 +123,8 @@ const collection=[
 ];
 
 let header = document.querySelector('header');
-
-
+let titre = document.createElement('h1');
+titre.innerText=`Triomphe Inoubliable: Le 11 du FC Barcelone, vainqueur la Ligue des Champions 2009`;
 
 document.addEventListener('DOMContentLoaded',function(){
 for(let i=0;i<collection.length;i++){
@@ -138,9 +138,10 @@ for(let i=0;i<collection.length;i++){
         section.classList.add('card');
 
             let division1 = document.createElement('div');
-            division1.classList.add('card__image');
+            division1.classList.add('card__div');
 
                 let image=document.createElement('img');
+                image.classList.add('card__div__image');
                 image.src=collector.picture;
 
             let article = document.createElement('article');
@@ -174,7 +175,7 @@ for(let i=0;i<collection.length;i++){
                 paragraph.classList.add('card__text__paragraph');
                 paragraph.innerText=collector.description;
 
-                
+        header.appendChild(titre);       
         main.appendChild(section);
         section.appendChild(division1);
         section.appendChild(article);
