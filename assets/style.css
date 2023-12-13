@@ -48,7 +48,13 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Merriweather-Light";
+  src: url("Merriweather-Light.ttf");
+}
 body {
+  font-family: "Merriweather-Light";
+  color: #d0d92c;
   width: 100%;
   max-width: 1520px;
   height: 100%;
@@ -59,16 +65,62 @@ body header {
   width: 100%;
   margin-top: 5%;
 }
+body header .logo {
+  width: 5%;
+}
+body header h1 {
+  width: 50%;
+  text-align: center;
+}
 body .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 body .container .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #203099;
   border: 1px solid #000000;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
-body .container .card .card__text {
+body .container .card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+body .container .card__div__image {
+  width: 100%;
+}
+body .container .card__text {
+  padding: 5%;
   text-align: center;
+}
+body .container .card__text__div {
+  display: flex;
+  padding-bottom: 5%;
+}
+body .container .card__text__div__nom {
+  padding-bottom: 5%;
+  width: 100%;
+}
+body .container .card__text__div__natio {
+  width: 15%;
+}
+body .container .card__text__birth {
+  padding-bottom: 5%;
+}
+body .container .card__text__poste {
+  padding-bottom: 5%;
+}
+body .container .card__text__taille {
+  padding-bottom: 5%;
+}
+body .container .card__text__poids {
+  padding-bottom: 5%;
+}
+body .container .card__text__paragraph {
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
