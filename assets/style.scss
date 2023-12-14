@@ -5,9 +5,16 @@
     src: url('Merriweather-Light.ttf');
 }
 
+@mixin media-minwidth($screensize){
+    @media (max-width:$screensize){
+        @content;
+    }
+}
+
 $black:#000000;
 $yellow:#d0d92c;
 $dark-blue:#203099;
+$mobile: "475px";
 
 body{
 
@@ -25,6 +32,11 @@ body{
 
         .logo{
             width: 5%;
+            
+            @include media-minwidth($mobile){
+                width: 30%;
+                height: auto;
+            }
         }
 
         h1{
@@ -40,23 +52,29 @@ body{
         gap:20px;
         margin-top: 5%;
         margin-bottom: 5%;
+
+        #Button_Alpha{
+            border: 1px solid $black;
+        }
     
         .card{
             display: flex;
             flex-direction: column;
             background-color:$dark-blue;
             border: 1px solid $black;
-            transition: box-shadow 0.3s, transform 0.3s;
+            transition: box-shadow 0.2s, transform 0.2s;
+            border-radius: 70px;
 
             &:hover{
             
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
 
             &__div{
 
                 &__image{
+                    border-radius: 69px 69px 0px 0px;
                     width: 100%;
                 }
             }
@@ -69,7 +87,7 @@ body{
                     padding-bottom: 5%;
 
                     &__nom{
-                        padding-bottom: 5%;
+                        padding-right: 10%;
                         width: 100%;
                     }
 

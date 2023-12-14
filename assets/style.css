@@ -68,6 +68,12 @@ body header {
 body header .logo {
   width: 5%;
 }
+@media (max-width: 475px) {
+  body header .logo {
+    width: 30%;
+    height: auto;
+  }
+}
 body header h1 {
   width: 50%;
   text-align: center;
@@ -80,18 +86,23 @@ body .container {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+body .container #Button_Alpha {
+  border: 1px solid #000000;
+}
 body .container .card {
   display: flex;
   flex-direction: column;
   background-color: #203099;
   border: 1px solid #000000;
-  transition: box-shadow 0.3s, transform 0.3s;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border-radius: 70px;
 }
 body .container .card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 body .container .card__div__image {
+  border-radius: 69px 69px 0px 0px;
   width: 100%;
 }
 body .container .card__text {
@@ -103,7 +114,7 @@ body .container .card__text__div {
   padding-bottom: 5%;
 }
 body .container .card__text__div__nom {
-  padding-bottom: 5%;
+  padding-right: 10%;
   width: 100%;
 }
 body .container .card__text__div__natio {

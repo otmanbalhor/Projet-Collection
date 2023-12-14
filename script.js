@@ -122,6 +122,11 @@ const collection=[
     },
 ];
 
+function ElementAndClass(elementType, className) {
+    const element = document.createElement(elementType);
+    element.classList.add(className);
+    return element;
+  }
 
 document.body.style.backgroundImage="url(images/fond.jpg)";
 document.body.style.backgroundRepeat="no-repeat"; 
@@ -129,8 +134,7 @@ document.body.style.backgroundPosition="center";
 document.body.style.backgroundSize="cover";
 
 let header = document.querySelector('header');
-let logo = document.createElement('img');
-logo.classList.add('logo');
+let logo = ElementAndClass('img','logo');
 logo.src = "images/barca.png";
 
 header.appendChild(logo);
@@ -138,57 +142,57 @@ header.appendChild(logo);
 let titre = document.createElement('h1');
 titre.innerText=`Triomphe Inoubliable: Le 11 du FC Barcelone, vainqueur de la Ligue des Champions 2009`;
 
+
 document.addEventListener('DOMContentLoaded',function(){
+
+    function triename(){
+        collection.sort(function (a, b) {
+    
+        return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+      });
+    }
+    
 for(let i=0;i<collection.length;i++){
 
     let collector=collection[i];
 
     let main = document.querySelector('main');
     main.classList.add('container');
+
+    let bouton = document.createElement('div');
+    bouton.id = "Button_Alpha";
     
-        let section = document.createElement('section');
-        section.classList.add('card');
+        let section = ElementAndClass('section','card');
 
-            let division1 = document.createElement('div');
-            division1.classList.add('card__div');
+            let division1 = ElementAndClass('div','card__div');
+            
 
-                let image=document.createElement('img');
-                image.classList.add('card__div__image');
+                let image=ElementAndClass('img','card__div__image');
                 image.src=collector.picture;
 
-            let article = document.createElement('article');
-            article.classList.add('card__text');
+            let article = ElementAndClass('article','card__text');
                 
-                let division2 = document.createElement('div');
-                division2.classList.add('card__text__div');
+                let division2 = ElementAndClass('div','card__text__div');
 
-                    let natio = document.createElement('img')
-                    natio.classList.add('card__text__div__natio')
+                    let natio = ElementAndClass('img','card__text__div__natio');
                     natio.src = collector.nationalite;
 
-                    let nom = document.createElement('h2');
-                    nom.classList.add('card__text__div__nom');
+                    let nom = ElementAndClass('h2','card__text__div__nom');
                     nom.innerText = collector.name;
 
-                let division3 = document.createElement('div');
-                division3.classList.add('card__text__birth');
+                let division3 = ElementAndClass('div','card__text__birth');
                 division3.innerText=`Année de naissance: ${collector.birth}`;
 
-                let division4 = document.createElement('div');
-                division4.classList.add('card__text__poste');
+                let division4 = ElementAndClass('div','card__text__poste');
                 division4.innerText=`Poste: ${collector.poste}`;
 
-                let division5 = document.createElement('div');
-                division5.classList.add('card__text__taille');
+                let division5 = ElementAndClass('div','card__text__taille');
                 division5.innerText=`Taille: ${collector.taille} cm`;
 
-                let division6 = document.createElement('div');
-                division6.classList.add('card__text__poids');
+                let division6 = ElementAndClass('div','card__text__poids');
                 division6.innerText=`Poids: ${collector.poids} kg`;
 
-                
-                let paragraph = document.createElement('p');
-                paragraph.classList.add('card__text__paragraph');
+                let paragraph = ElementAndClass('p','card__text__paragraph');
                 paragraph.innerText=collector.description;
 
         header.appendChild(titre);       
@@ -206,6 +210,10 @@ for(let i=0;i<collection.length;i++){
         article.appendChild(paragraph);
 
     }
+
+    const Button = document.getElementById('Button_Alpha');
+
+    Button.addEventListener('click', triename);
 });
    
 
