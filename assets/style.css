@@ -122,6 +122,9 @@ body .container .card__text__div__natio {
 }
 body .container .card__text__birth {
   padding-bottom: 5%;
+  width: 91%;
+  border-top: 1px solid;
+  padding: 5%;
 }
 body .container .card__text__poste {
   padding-bottom: 5%;
