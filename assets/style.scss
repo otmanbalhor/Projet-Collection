@@ -111,18 +111,10 @@ body{
                     padding: 5%;
                 }
 
-                &__poste{
+                &__poste, &__poids, &__taille{
                     padding-bottom: 5%;
                 }
-
-                &__taille{
-                    padding-bottom: 5%;
-                }
-
-                &__poids{
-                    padding-bottom: 5%;
-                }
-
+                
                 &__paragraph{
                     font-size: 12px;
                 }

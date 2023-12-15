@@ -128,10 +128,10 @@ function ElementAndClass(elementType, className) {
     return element;
   }
 
-document.body.style.backgroundImage="url(images/fond.jpg)";
-document.body.style.backgroundRepeat="no-repeat"; 
-document.body.style.backgroundPosition="center";
-document.body.style.backgroundSize="cover";
+document.body.style.backgroundImage = "url(images/fond.jpg)";
+document.body.style.backgroundRepeat = "no-repeat"; 
+document.body.style.backgroundPosition = "center";
+document.body.style.backgroundSize = "cover";
 
 let header = document.querySelector('header');
 let logo = ElementAndClass('img','logo');
@@ -140,7 +140,7 @@ logo.src = "images/barca.png";
 header.appendChild(logo);
 
 let titre = document.createElement('h1');
-titre.innerText=`Triomphe Inoubliable: Le 11 du FC Barcelone, vainqueur de la Ligue des Champions 2009`;
+titre.innerText = `Triomphe Inoubliable: Le 11 du FC Barcelone, vainqueur de la Ligue des Champions 2009`;
 
 
 document.addEventListener('DOMContentLoaded',function(){
@@ -167,8 +167,8 @@ for(let i=0;i<collection.length;i++){
             let division1 = ElementAndClass('div','card__div');
             
 
-                let image=ElementAndClass('img','card__div__image');
-                image.src=collector.picture;
+                let image = ElementAndClass('img','card__div__image');
+                image.src = collector.picture;
 
             let article = ElementAndClass('article','card__text');
                 
@@ -181,16 +181,16 @@ for(let i=0;i<collection.length;i++){
                     nom.innerText = collector.name;
 
                 let division3 = ElementAndClass('div','card__text__birth');
-                division3.innerText=`Année de naissance: ${collector.birth}`;
+                division3.innerText = `Année de naissance: ${collector.birth}`;
 
                 let division4 = ElementAndClass('div','card__text__poste');
-                division4.innerText=`Poste: ${collector.poste}`;
+                division4.innerText = `Poste: ${collector.poste}`;
 
                 let division5 = ElementAndClass('div','card__text__taille');
                 division5.innerText=`Taille: ${collector.taille} cm`;
 
                 let division6 = ElementAndClass('div','card__text__poids');
-                division6.innerText=`Poids: ${collector.poids} kg`;
+                division6.innerText = `Poids: ${collector.poids} kg`;
 
                 let paragraph = ElementAndClass('p','card__text__paragraph');
                 paragraph.innerText=collector.description;
