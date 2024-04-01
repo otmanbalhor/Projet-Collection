@@ -10,7 +10,8 @@
 
 
 ## Images du projet 📷
-![Projet Planner main](https://github.com/otmanbalhor/Hackers-Poulette/assets/151409181/224b8b6d-b4fb-403f-a05e-9e4a500a1301)
+
+![Projet Planner main](https://github.com/otmanbalhor/Projet-Collection/assets/151409181/32ba9005-8d16-4742-a2c0-a2eeb5eed2fb)
 
 ![darkmode](https://github.com/otmanbalhor/Hackers-Poulette/assets/151409181/1efde905-9e97-405a-a71e-77f9b84df0be)
 
