@@ -13,19 +13,19 @@
 
 ![first page](https://github.com/otmanbalhor/Projet-Collection/assets/151409181/a7d21794-9fa5-4d2b-8560-992bd1a26f1d)
 
-## Résumé du Projet
+## Résumé du Projet 🎯
 Avec l'avènement des services de streaming, des plateformes de réservation en ligne et des sites d'évaluation, nous sommes entourés de collections de contenus variés. Que ce soit des films, des jeux vidéo, des recettes de cuisine ou des œuvres d'art, tous ces services proposent une expérience utilisateur basée sur la présentation cohérente et attrayante d'une collection de contenu.
 
 Dans ce projet, j'ai réalisé une collection de cartes des joueurs mythiques du FC Barcelone de la saison 2008-2009.
 
 
-## Fonctionnalités
+## Fonctionnalités 🛠️
 * Affichage de chaque élément de la collection sous forme de carte avec des informations détaillées.
 * Mise en page responsive pour garantir une expérience utilisateur optimale sur tous les appareils.
 * Design personnalisé en utilisant des techniques CSS(SASS) modernes sans l'utilisation de frameworks externes.
 Formulaire de soumission : À déterminer
 
-## Objectifs d'apprentissage
+## Objectifs d'apprentissage 🎓
 
 * Utilisation pratique des langages HTML, CSS et JavaScript
 * Compréhension des techniques de mise en page responsive
