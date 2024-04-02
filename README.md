@@ -4,7 +4,7 @@
 
 ## Informations du Projet 🤝
 
-**Durée :** 3 jours
+**Durée :** 2 jours
 
 **Équipe de Développement:**
 - [Otman Balhor](https://github.com/otmanbalhor)
